@@ -1,0 +1,32 @@
+install laravel - 'laravel new project1'
+install npm - 'npm install'
+vue install - 'npm install vue-loader@next vue@next vue-router@next --force'
+vue plugins - 'npm install @vitejs/plugin-vue --force --save -dev'
+
+
+vite.config.js configeration ---
+
+
+In view file create file app.vue and HTML ---
+@vite('resources/css/app.css');
+<div id="app"> </div>
+@vite('resources/js/app.js');
+
+
+
+In resources/js/app.js file ---
+import { createApp } from 'vue';
+import app from './component/app.vue';
+createApp(app).mount('#app');
+
+
+In resources/js/component/app.vue ---
+<template>
+    Hello
+</template>
+
+In web.php ---
+route the page...
+
+
+
